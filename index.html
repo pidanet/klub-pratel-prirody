@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Petr Vitvar -->
+  <!-- petr.vitvar@pida.cz -->
+  <!-- Petr V. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0185bc51a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Klub přátel přírody</title>
+  </head>
+  <body>
+    <header>
+      <nav class="ribbon">
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="#about-us">O nás</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#login">Přihlášení</a></li>
+          </ul>
+
+          <div class="icon-container">
+            <div class="bw-icon">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+            <div class="nav-icon">
+              <i class="ico fa-solid fa-bars"></i>
+              <!---<i class="ico fa-solid fa-xmark"></i>--->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-section">
+        <div class="hero-section-wrapper">
+          <div class="hero-text">
+            <h1>Klub přátel přírody</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2 id="about-us">O nás</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+          consectetur a erat nam at lectus urna duis. Elementum nisi quis
+          eleifend quam adipiscing vitae proin sagittis nisl. Nullam non nisi
+          est sit amet facilisis magna. Ac placerat vestibulum lectus mauris
+          ultrices eros in. Gravida neque convallis a cras semper auctor neque.
+          Egestas quis ipsum suspendisse ultrices gravida dictum. Tristique
+          magna sit amet purus gravida quis blandit turpis cursus. Eleifend mi
+          in nulla posuere. Arcu cursus vitae congue mauris rhoncus aenean vel.
+          Mauris cursus mattis molestie a iaculis at erat pellentesque. In vitae
+          turpis massa sed.
+        </p>
+        <p>
+          Morbi tristique senectus et netus et malesuada. Morbi enim nunc
+          faucibus a pellentesque. Malesuada fames ac turpis egestas sed tempus
+          urna et pharetra. Donec ultrices tincidunt arcu non sodales neque
+          sodales ut etiam. Pellentesque habitant morbi tristique senectus et
+          netus. Vitae congue mauris rhoncus aenean vel elit scelerisque. Ac
+          placerat vestibulum lectus mauris ultrices eros. Tincidunt id aliquet
+          risus feugiat in ante metus dictum at. Suspendisse potenti nullam ac
+          tortor vitae purus faucibus ornare. Lacinia at quis risus sed
+          vulputate odio ut. Ut tortor pretium viverra suspendisse potenti.
+          Varius quam quisque id diam. Viverra nibh cras pulvinar mattis nunc
+          sed. Scelerisque varius morbi enim nunc faucibus a. Ornare lectus sit
+          amet est placerat. Sit amet purus gravida quis blandit turpis cursus.
+          Mauris a diam maecenas sed enim ut sem viverra.
+        </p>
+      </section>
+      <section class="gallery-section">
+        <h2 id="galerie">Galerie</h2>
+        <div class="gallery-section-wrapper">
+          <div class="gallery-section-img">
+            <img src="img/img-1.jpg" alt="Zlomený strom" />
+          </div>
+          <div class="gallery-section-img">
+            <img src="img/img-2.jpg" alt="Vysoká tráva" />
+          </div>
+          <div class="gallery-section-img">
+            <img src="img/img-3.jpg" alt="Podzimní řeka" />
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <h2 id="login">Přihlášení</h2>
+        <div class="form-box">
+          <form>
+            <input
+              type="password"
+              placeholder="Vyplňte heslo"
+              id="password-1"
+            />
+            <span class="notification-1">Vyplňte své heslo</span>
+            <input
+              type="password"
+              placeholder="Vyplňte heslo znovu"
+              id="password-2"
+            />
+            <span class="notification-2">Hesla se neschodují!</span>
+            <span class="notification-3">Výborně! Hesla se schodují.</span>
+            <input type="submit" value="Odeslat" id="submit-btn" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="ribbon">
+      <div class="footer-wrapper">
+        <p>
+          Klub přátel přírody, Ulice 123, Město, tel.: 123 456 789, email:
+          neco@neco.cz
+        </p>
+      </div>
+    </footer>
+    <a id="scrollbtn">&#8679;</a>
+    <script src="script.js"></script>
+  </body>
+</html>

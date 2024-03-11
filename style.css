@@ -1,0 +1,298 @@
+:root {
+  --color-1: #283739;
+  --color-2: #a2c11c;
+  --color-3: #2c5d63;
+  --color-4: #e0e0e0;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-1);
+  background-color: var(--white);
+}
+
+.dark-mode {
+  color: var(--white);
+  background-color: var(--color-1);
+}
+
+p {
+  padding: 16px 0;
+  font-size: 0.9em;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-2);
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 1.1em;
+  }
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+  background-color: var(--color-4);
+}
+
+nav.dark-mode {
+  background-color: var(--color-3);
+}
+
+.nav-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 64px;
+  align-items: center;
+}
+
+nav ul.dark-mode {
+  background-color: var(--color-3);
+}
+
+nav ul a {
+  color: var(--color-3);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav.dark-mode ul a {
+  color: var(--color-4);
+}
+
+nav ul a:hover {
+  color: var(--color-2);
+}
+
+.icon-container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.bw-icon {
+  cursor: pointer;
+}
+
+.fa-circle-half-stroke.dark-mode {
+  background-color: var(--color-3);
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-wrapper {
+    max-width: 90%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--color-4);
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+    padding: 4px;
+    border-bottom: 1px dotted var(--white);
+  }
+
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex !important;
+  }
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-image: url("img/sam-0990.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section-wrapper {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hero-text {
+  color: var(--white);
+  position: absolute;
+  right: 10px;
+  top: 330px;
+  text-align: right;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.4em;
+  }
+}
+
+/* MAIN SECTION */
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 32px 0;
+}
+
+/* GALLERY SECTION */
+
+.gallery-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 32px 0;
+}
+
+.gallery-section-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.gallery-section-img {
+  object-fit: fill;
+  flex-basis: calc(100% / 3 - 8px);
+}
+.gallery-section-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+@media (max-width: 768px) {
+  .gallery-section-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* FORM SECTION */
+
+.form-box {
+  border: 2px dashed;
+  border-radius: 4px;
+  height: 240px;
+  margin: 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+#submit-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: var(--color-2);
+  cursor: pointer;
+}
+
+#password-1,
+#password-2 {
+  height: 30px;
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.notification-1,
+.notification-2,
+.notification-3 {
+  display: none;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--color-4);
+  padding: 24px 0 16px 0;
+  text-align: center;
+}
+
+footer.dark-mode {
+  background-color: var(--color-3);
+}
+
+.footer-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* SCROLL BUTTON */
+
+#scrollbtn {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: var(--color-2);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: 800;
+}
